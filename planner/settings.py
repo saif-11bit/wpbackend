@@ -79,13 +79,22 @@ WSGI_APPLICATION = "planner.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': "wp_db", # Your database name
+#         'USER': "zero", # Database user
+#         'PASSWORD': "zero0000", # Database user password
+#         'HOST': "localhost", # database host
+#         'PORT': '5432', # port to connect to database
+#     }
+# }
 
 
 from datetime import timedelta
